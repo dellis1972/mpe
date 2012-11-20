@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DF4802E4-FF2E-432D-BC05-8E424838768B}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProjectMercury</RootNamespace>
+    <AssemblyName>ProjectMercury</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>3e449874-7e3c-439b-860b-b0c57194bb60</XnaCrossPlatformGroupID>
+    <XnaOutputType>Library</XnaOutputType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;WINDOWS;UNSAFE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\x86\Debug\ProjectMercury.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS;UNSAFE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>..\ProjectMercury.CodeAnalysis.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\x86\Release\ProjectMercury.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ProjectMercury.Windows.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BillboardStyle.cs" />
+    <Compile Include="Check.cs" />
+    <Compile Include="AsyncUpdateManager.cs" />
+    <Compile Include="Calculator.cs" />
+    <Compile Include="ColourRange.cs" />
+    <Compile Include="Controllers\CooldownController.cs" />
+    <Compile Include="Controllers\FrustrumCullController.cs" />
+    <Compile Include="Controllers\TriggerRandomOffsetController.cs" />
+    <Compile Include="Controllers\NamespaceDoc.cs" />
+    <Compile Include="Controllers\TriggerRotationController.cs" />
+    <Compile Include="Counters.cs" />
+    <Compile Include="Emitters\CircleEmitter.cs" />
+    <Compile Include="Emitters\LineEmitter.cs" />
+    <Compile Include="Emitters\NamespaceDoc.cs" />
+    <Compile Include="Emitters\PlaneEmitter.cs" />
+    <Compile Include="Mocks\TypeDescriptionProviderAttribute.cs" />
+    <Compile Include="Modifiers\NamespaceDoc.cs" />
+    <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="Proxies\ParticleEffectExtensions.cs" />
+    <Compile Include="Proxies\ParticleEffectProxy.cs" />
+    <Compile Include="Properties\CommonAssemblyInfo.cs" />
+    <Compile Include="Controllers\AbstractController.cs" />
+    <Compile Include="Controllers\ControllerPipeline.cs" />
+    <Compile Include="Controllers\TimedReleaseQuantityController.cs" />
+    <Compile Include="Controllers\TriggerContext.cs" />
+    <Compile Include="Controllers\TriggerOffsetController.cs" />
+    <Compile Include="Emitters\AbstractEmitter.cs" />
+    <Compile Include="Emitters\BoxEmitter.cs" />
+    <Compile Include="Emitters\CylinderEmitter.cs" />
+    <Compile Include="Emitters\EmitterBlendMode.cs" />
+    <Compile Include="Emitters\EmitterCollection.cs" />
+    <Compile Include="Emitters\PointEmitter.cs" />
+    <Compile Include="Emitters\SphereEmitter.cs" />
+    <Compile Include="ISupportDeepCopy.cs" />
+    <Compile Include="Mocks\ImmutableObjectAttribute.cs" />
+    <Compile Include="Mocks\InvalidEnumArgumentException.cs" />
+    <Compile Include="Mocks\SerializableAttribute.cs" />
+    <Compile Include="Modifiers\AbstractModifier.cs" />
+    <Compile Include="Modifiers\BoxForceModifier.cs" />
+    <Compile Include="Modifiers\ColourInterpolator2.cs" />
+    <Compile Include="Modifiers\ColourInterpolator3.cs" />
+    <Compile Include="Modifiers\DampingModifier.cs" />
+    <Compile Include="Modifiers\ForceInterpolator2.cs" />
+    <Compile Include="Modifiers\HueShiftModifier.cs" />
+    <Compile Include="Modifiers\LinearGravityModifier.cs" />
+    <Compile Include="Modifiers\ModifierCollection.cs" />
+    <Compile Include="Modifiers\OpacityFastFadeModifier.cs" />
+    <Compile Include="Modifiers\OpacityInterpolator2.cs" />
+    <Compile Include="Modifiers\OpacityInterpolator3.cs" />
+    <Compile Include="Modifiers\RotationModifier.cs" />
+    <Compile Include="Modifiers\ScaleInterpolator2.cs" />
+    <Compile Include="Modifiers\ScaleInterpolator3.cs" />
+    <Compile Include="Modifiers\SphereForceModifier.cs" />
+    <Compile Include="Modifiers\VelocityClampModifier.cs" />
+    <Compile Include="Particle.cs" />
+    <Compile Include="ParticleEffect.cs" />
+    <Compile Include="ParticleIterator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxies\PointToPointProxy.cs" />
+    <Compile Include="RandomUtil.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="Renderers\AbstractRenderer.cs" />
+    <Compile Include="Renderers\QuadRenderer.cs" />
+    <Compile Include="Renderers\BlendStateFactory.cs" />
+    <Compile Include="Renderers\NamespaceDoc.cs" />
+    <Compile Include="Renderers\RenderContext.cs" />
+    <Compile Include="Renderers\SpriteBatchRenderer.cs" />
+    <Compile Include="RotationRange.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ProjectMercury.Windows.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

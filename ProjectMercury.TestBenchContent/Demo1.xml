@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent>
+  <Asset Type="ProjectMercury.ParticleEffect">
+    <Name Null="true" />
+    <Author Null="true" />
+    <Description Null="true" />
+    <Emitters>
+      <Item Type="ProjectMercury.Emitters.PointEmitter">
+        <Name>Emitter 1</Name>
+        <Budget>4500</Budget>
+        <Term>3</Term>
+        <ReleaseQuantity>10</ReleaseQuantity>
+        <Enabled>true</Enabled>
+        <ReleaseSpeed>[25,25]</ReleaseSpeed>
+        <ReleaseColour>
+          <Red>[1,1]</Red>
+          <Green>[1,1]</Green>
+          <Blue>[1,1]</Blue>
+        </ReleaseColour>
+        <ReleaseOpacity>[1,1]</ReleaseOpacity>
+        <ReleaseScale>[64,128]</ReleaseScale>
+        <ReleaseRotation>
+          <Pitch>[0,0]</Pitch>
+          <Yaw>[0,0]</Yaw>
+          <Roll>[-3.14,3.14]</Roll>
+        </ReleaseRotation>
+        <ParticleTextureAssetPath>Star</ParticleTextureAssetPath>
+        <BlendMode>Add</BlendMode>
+        <Modifiers>
+          <Modifier Type="ProjectMercury.Modifiers.OpacityFastFadeModifier">
+            <InitialOpacity>1</InitialOpacity>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.ColourInterpolator2">
+            <InitialColour>1 0 1</InitialColour>
+            <FinalColour>1 1 1</FinalColour>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.RotationModifier">
+            <RotationRate>0 0 1</RotationRate>
+          </Modifier>
+        </Modifiers>
+        <Controllers>
+          <Controller Type="ProjectMercury.Controllers.TriggerOffsetController">
+            <TriggerOffset>0 100 0</TriggerOffset>
+          </Controller>
+          <Controller Type="ProjectMercury.Controllers.TimedReleaseQuantityController" />
+          <Controller Type="ProjectMercury.Controllers.TriggerRotationController">
+            <TriggerRotation>0 0.707 0</TriggerRotation>
+          </Controller>
+        </Controllers>
+      </Item>
+      <Item Type="ProjectMercury.Emitters.PointEmitter">
+        <Name>Emitter 2</Name>
+        <Budget>4500</Budget>
+        <Term>3</Term>
+        <ReleaseQuantity>10</ReleaseQuantity>
+        <Enabled>true</Enabled>
+        <ReleaseSpeed>[25,25]</ReleaseSpeed>
+        <ReleaseColour>
+          <Red>[1,1]</Red>
+          <Green>[1,1]</Green>
+          <Blue>[1,1]</Blue>
+        </ReleaseColour>
+        <ReleaseOpacity>[1,1]</ReleaseOpacity>
+        <ReleaseScale>[64,128]</ReleaseScale>
+        <ReleaseRotation>
+          <Pitch>[0,0]</Pitch>
+          <Yaw>[0,0]</Yaw>
+          <Roll>[-3.14,3.14]</Roll>
+        </ReleaseRotation>
+        <ParticleTextureAssetPath>Star</ParticleTextureAssetPath>
+        <BlendMode>Add</BlendMode>
+        <Modifiers>
+          <Modifier Type="ProjectMercury.Modifiers.OpacityFastFadeModifier">
+            <InitialOpacity>1</InitialOpacity>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.ColourInterpolator2">
+            <InitialColour>0 1 0</InitialColour>
+            <FinalColour>1 1 1</FinalColour>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.RotationModifier">
+            <RotationRate>0 0 1</RotationRate>
+          </Modifier>
+        </Modifiers>
+        <Controllers>
+          <Controller Type="ProjectMercury.Controllers.TriggerOffsetController">
+            <TriggerOffset>0 100 0</TriggerOffset>
+          </Controller>
+          <Controller Type="ProjectMercury.Controllers.TimedReleaseQuantityController" />
+        </Controllers>
+      </Item>
+      <Item Type="ProjectMercury.Emitters.PointEmitter">
+        <Name>Emitter 3</Name>
+        <Budget>4500</Budget>
+        <Term>3</Term>
+        <ReleaseQuantity>10</ReleaseQuantity>
+        <Enabled>true</Enabled>
+        <ReleaseSpeed>[25,25]</ReleaseSpeed>
+        <ReleaseColour>
+          <Red>[1,1]</Red>
+          <Green>[1,1]</Green>
+          <Blue>[1,1]</Blue>
+        </ReleaseColour>
+        <ReleaseOpacity>[1,1]</ReleaseOpacity>
+        <ReleaseScale>[64,128]</ReleaseScale>
+        <ReleaseRotation>
+          <Pitch>[0,0]</Pitch>
+          <Yaw>[0,0]</Yaw>
+          <Roll>[-3.14,3.14]</Roll>
+        </ReleaseRotation>
+        <ParticleTextureAssetPath>Star</ParticleTextureAssetPath>
+        <BlendMode>Add</BlendMode>
+        <Modifiers>
+          <Modifier Type="ProjectMercury.Modifiers.OpacityFastFadeModifier">
+            <InitialOpacity>1</InitialOpacity>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.ColourInterpolator2">
+            <InitialColour>0 0 1</InitialColour>
+            <FinalColour>1 1 1</FinalColour>
+          </Modifier>
+          <Modifier Type="ProjectMercury.Modifiers.RotationModifier">
+            <RotationRate>0 0 1</RotationRate>
+          </Modifier>
+        </Modifiers>
+        <Controllers>
+          <Controller Type="ProjectMercury.Controllers.TriggerOffsetController">
+            <TriggerOffset>0 100 0</TriggerOffset>
+          </Controller>
+          <Controller Type="ProjectMercury.Controllers.TimedReleaseQuantityController" />
+        </Controllers>
+      </Item>
+    </Emitters>
+  </Asset>
+</XnaContent>
