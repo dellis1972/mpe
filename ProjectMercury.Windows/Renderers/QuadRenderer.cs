@@ -472,7 +472,7 @@ namespace ProjectMercury.Renderers
                     foreach (EffectPass pass in this.BasicEffect.CurrentTechnique.Passes)
                     {
                         pass.Apply();
-
+                        
                         base.GraphicsDeviceService.GraphicsDevice.DrawIndexedPrimitives(PrimitiveType.TriangleList, 0, _vertexBufferPosition, vertexCount,
                                                                                         _vertexBufferPosition/4*6, vertexCount/2);
                     }
@@ -531,7 +531,7 @@ namespace ProjectMercury.Renderers
                 {
                     new VertexElement( 0, VertexElementFormat.Vector3, VertexElementUsage.Position,          0),
                     new VertexElement(12, VertexElementFormat.Vector4, VertexElementUsage.Color,             0),
-#if WINDOWS_PHONE
+#if WINDOWS_PHONE || WINRT
                     //Windows phone does not support HalfVector2
                     new VertexElement(28, VertexElementFormat.Vector2, VertexElementUsage.TextureCoordinate, 0)
 #else
@@ -546,7 +546,7 @@ namespace ProjectMercury.Renderers
                 };
             }
 
-#if WINDOWS_PHONE
+#if WINDOWS_PHONE || WINRT
             internal const int Size = 36; //NOTE: Make sure to change this if you change the vertex declaration
 #else
             internal const int Size = 32; //NOTE: Make sure to change this if you change the vertex declaration
